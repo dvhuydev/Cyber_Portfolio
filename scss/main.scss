@@ -1,0 +1,24 @@
+@import "./scss_component/headerSection";
+@import "./scss_component/carouselSection";
+@import "./scss_component/contentSection";
+@import "./scss_component/footerSection";
+@import "./scss_component/productSection";
+@import "./scss_component/achievementSection";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 10px;
+    // transition: all .5s ease;
+    
+}
+
+html,body{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,61 @@
+
+
+.achievementSection{
+    position: relative;
+    .achievementBg{
+        background-image: url(./../../img/memphis_3.png);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
+        opacity: .6;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .achievementContainer{
+        .achievementContent{
+            padding: 7rem 0;
+
+            .Content__item-left{
+                border-radius: 1rem;
+                background: rgba(225, 225, 225, 0.2);;
+                padding: 5rem;
+                backdrop-filter: blur(.3rem);
+                border: 1px solid rgba(225, 225, 225, 0.25);
+                h2{
+                    font-size: 3.6rem;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    color: #000;
+                    line-height: 4.2rem;
+                }
+                p{
+                    padding-top: 2rem;
+                    font-size: 1.4rem;
+                    line-height: 1.7;
+                    color: #585858;
+                }
+            }
+            .Content__item-right{
+                border-radius: 1rem;
+                padding: 5rem 0;
+                backdrop-filter: blur(.3rem);
+                p{
+                    font-size: 1.6rem;
+                    line-height: 1.8;
+                }
+                .item__banner{
+
+                    margin-top: 5rem;
+                    img{
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}

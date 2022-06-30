@@ -1,0 +1,87 @@
+@import "./../responsive/responesive";
+
+
+
+
+
+.contentSection{
+    .titleContent{
+        text-align: center;
+        h3{
+            font-size: 3.6rem;
+            color: #000;
+            line-height: 2;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 2;
+            color: #585858;
+        }
+    }
+    .detailContent{
+        @include content{
+            .nav-item{
+                display: block;
+                min-width: 40%;
+                text-align: center;
+            }
+        }
+        .nav{
+            .nav-item{
+                margin: 0 .5rem;
+                .nav-link.active{
+                    color: #fff;
+                    background-color: #35a22c;
+                }
+                .nav-link{
+                    text-align: center;
+                    font-size: 1.7rem;
+                    padding: 1rem 1.5rem;
+                    background: #fff;
+                    color: #585858;
+                    border: 1px solid #000;
+                }
+            }
+        }
+
+        .tab-content{
+            .tab-pane{
+                .row{
+                    .rowhover{
+                        cursor: pointer;
+                        &:hover h3{
+                            color: #35a22c;
+                        }
+                    }
+                    .card{
+                        margin-top: 3rem;
+                        overflow: hidden;
+                        border-radius: 3rem;
+                        border: none;
+                        .card-body{
+                            // border: 1px solid $Maincolor;
+                            overflow: hidden;
+                            border-radius: 0 0 3rem 3rem;
+                            border: 1px solid transparent;
+                            transition: all .5s ease;
+                            h3{
+                                font-size: 2rem;
+                            }
+                            p{
+                                font-size: 1.6rem;
+                                color: #585858;
+                            }
+                        }
+                        &:hover .card-body{
+                            border-color: #35a22c;
+                            border-top-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

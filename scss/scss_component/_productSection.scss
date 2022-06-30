@@ -1,0 +1,89 @@
+@import "./../responsive/responesive";
+
+.productSection{
+
+    // RESPONSIVE MEDIUM 768-991
+    // Readme: Nếu Responve theo Bootstrap phần này, thì thấy hơi nhỏ, và dài ...
+    // Nên dùng max-width để dài theo Medium Res
+    @include medium{
+        .productContainer{
+            max-width: 99.1rem;
+        }
+    }
+
+
+    background-image: url('../img/3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 10rem;
+    position: relative;
+    .overlay{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .2);
+    }
+
+
+    .productContainer{
+        position: relative;
+
+
+        .containerHeading{
+            text-align: center;
+            color: #fff;
+            padding-top: 10rem;
+            h3{
+                font-size: 3.6rem;
+                text-transform: capitalize;
+                padding-bottom: 2.5rem;
+    
+            }
+            p{
+                font-size: 1.5rem;
+                width: 75%;
+                line-height: 2;
+                margin: auto;
+            }
+        }
+
+        .containerContent{
+            // padding: 10rem 0;
+            padding: 5rem 0 10rem 0;
+            text-align: center;
+            color: #fff;
+            .Content__item{
+                margin-top: 5rem;
+                background-color: rgba(225, 225, 225, 0.2);
+                padding: 4rem;
+                border-radius: 1rem;
+                border: 2px solid rgba(225, 225, 225, 0.2);
+                // Lam mo`
+                backdrop-filter: blur(.3rem);
+                transition: all .3s ease;
+                &:hover{
+                    background: #000;
+                    border: 1px solid #fff;
+                }
+                i{
+                    font-size: 4.5rem;
+                    color: #35a22c;
+                }
+                h4{
+                    margin: 2.5rem 0;
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 1.6rem;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+}

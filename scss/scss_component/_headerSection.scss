@@ -1,0 +1,175 @@
+@import "./../responsive/responesive";
+
+.headerSection {
+    position: absolute;
+    z-index: 1;
+
+    // RESPONSIVE 576 - 767
+    @include small{
+        .navbar{
+
+            .navbar-toggler.btn{
+                border-radius: 1px solid rgba(255, 255, 255, 0.1);
+                background-color: #35a22c;
+                .fa-solid{
+                    color: hsl(0, 1%, 72%);
+                }
+            }
+
+        }
+    }
+
+
+    // RESPONSIVE Less than 576 (<=575)
+    @include megasmall{
+        .navbar{
+
+            .navbar-toggler.btn{
+                border-radius: 1px solid rgba(255, 255, 255, 0.1);
+                background-color: #35a22c;
+                .fa-solid{
+                    color: hsl(0, 1%, 72%);
+                }
+            }
+
+        }
+    }
+    .navbar {
+
+        button {
+            &:hover {
+                background-color: transparent;
+            }
+        }
+
+        i {
+            font-size: 3rem;
+            color: #35a22c;
+            padding: 0.5rem 1rem;
+        }
+
+        a {
+            font-size: 3.6rem;
+            margin: 0;
+            color: #fff;
+        }
+
+        // Responsive 576 - 767
+        @include small{
+            .collapse{
+                margin-top: 1rem;
+                background-color: #fff;
+                // transition: all 0s;
+
+                .nav-item{
+                    margin: 0;
+                    padding: 0;
+                    &:hover{
+
+                        background-color: #35a22c;
+                    }
+
+                    .nav-link{
+                        display: block;
+                        color: #35a22c;
+
+                        &:hover {
+                            color: #fff !important;
+                        }
+                        
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        
+
+        // RESPONSIVE Less than 576 (<=575)
+        @include megasmall{
+            .collapse{
+                margin-top: 1rem;
+                background-color: #fff;
+                transition: all 0s;
+
+                .nav-item{
+                    margin: 0;
+                    padding: 0;
+                    &:hover{
+
+                        background-color: #35a22c;
+                    }
+
+                    .nav-link{
+                        display: block;
+                        color: #35a22c;
+
+                        &:hover {
+                            color: #fff !important;
+                        }
+                        
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // Min 768 - 991px vẫn chưa Res được. phải dưới 768px
+
+        // @include medium{
+        //     .collapse{
+        //         // background-color: #fff;
+        //     }
+        // }
+
+        .nav-item {
+            margin: 0 2rem;
+            text-align: center;
+
+            .nav-link {
+                color: #fff;
+                // color: #000;
+                font-size: 1.7rem;
+                margin: 0;
+                padding: 1rem 0;
+                position: relative;
+                display: inline-block;
+
+                &:hover {
+                    color: #35a22c;
+                }
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    height: .2rem;
+                    background: #35a22c;
+                    bottom: 0;
+                    left: 0;
+                    transition: all .3s ease;
+                    display: inline-block;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                    color: #35a22c;
+                }
+            }
+        }
+
+        .nav-item.active a {
+            color: #35a22c;
+        }
+
+        .nav-item.active ::after {
+            width: 100%;
+        }
+
+    }
+
+}

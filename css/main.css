@@ -1,0 +1,451 @@
+.headerSection {
+  position: absolute;
+  z-index: 1;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .headerSection .navbar .navbar-toggler.btn {
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #35a22c;
+  }
+  .headerSection .navbar .navbar-toggler.btn .fa-solid {
+    color: #b8b7b7;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .headerSection .navbar .navbar-toggler.btn {
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #35a22c;
+  }
+  .headerSection .navbar .navbar-toggler.btn .fa-solid {
+    color: #b8b7b7;
+  }
+}
+.headerSection .navbar button:hover {
+  background-color: transparent;
+}
+.headerSection .navbar i {
+  font-size: 3rem;
+  color: #35a22c;
+  padding: 0.5rem 1rem;
+}
+.headerSection .navbar a {
+  font-size: 3.6rem;
+  margin: 0;
+  color: #fff;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .headerSection .navbar .collapse {
+    margin-top: 1rem;
+    background-color: #fff;
+  }
+  .headerSection .navbar .collapse .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+  .headerSection .navbar .collapse .nav-item:hover {
+    background-color: #35a22c;
+  }
+  .headerSection .navbar .collapse .nav-item .nav-link {
+    display: block;
+    color: #35a22c;
+  }
+  .headerSection .navbar .collapse .nav-item .nav-link:hover {
+    color: #fff !important;
+  }
+  .headerSection .navbar .collapse .nav-item .nav-link::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .headerSection .navbar .collapse {
+    margin-top: 1rem;
+    background-color: #fff;
+    transition: all 0s;
+  }
+  .headerSection .navbar .collapse .nav-item {
+    margin: 0;
+    padding: 0;
+  }
+  .headerSection .navbar .collapse .nav-item:hover {
+    background-color: #35a22c;
+  }
+  .headerSection .navbar .collapse .nav-item .nav-link {
+    display: block;
+    color: #35a22c;
+  }
+  .headerSection .navbar .collapse .nav-item .nav-link:hover {
+    color: #fff !important;
+  }
+  .headerSection .navbar .collapse .nav-item .nav-link::after {
+    display: none;
+  }
+}
+.headerSection .navbar .nav-item {
+  margin: 0 2rem;
+  text-align: center;
+}
+.headerSection .navbar .nav-item .nav-link {
+  color: #fff;
+  font-size: 1.7rem;
+  margin: 0;
+  padding: 1rem 0;
+  position: relative;
+  display: inline-block;
+}
+.headerSection .navbar .nav-item .nav-link:hover {
+  color: #35a22c;
+}
+.headerSection .navbar .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background: #35a22c;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.headerSection .navbar .nav-item .nav-link:hover::after {
+  width: 100%;
+  color: #35a22c;
+}
+.headerSection .navbar .nav-item.active a {
+  color: #35a22c;
+}
+.headerSection .navbar .nav-item.active ::after {
+  width: 100%;
+}
+
+.carouselSection .navbar-toggler {
+  background-color: #35a22c;
+}
+.carouselSection .carousel-indicators {
+  margin-bottom: 5%;
+}
+.carouselSection .carousel-indicators li {
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+.carouselSection .carousel-indicators li.active {
+  background-color: #35a22c;
+}
+.carouselSection .carousel-item {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .carouselSection .carousel-item .carousel-caption.container {
+    top: 55%;
+    max-width: 54rem;
+  }
+  .carouselSection .carousel-item .carousel-caption.container h3 {
+    font-size: 4.5rem;
+  }
+  .carouselSection .carousel-item .carousel-caption.container p {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .carouselSection .carousel-item .carousel-caption.container {
+    top: 55%;
+    max-width: 54rem;
+  }
+  .carouselSection .carousel-item .carousel-caption.container h3 {
+    font-size: 3.8rem;
+  }
+  .carouselSection .carousel-item .carousel-caption.container p {
+    font-size: 1.6rem;
+  }
+}
+.carouselSection .carousel-item .carousel__misty {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+.carouselSection .carousel-item .carousel-caption {
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+.carouselSection .carousel-item .thumbs {
+  margin: auto;
+  max-width: 14rem;
+}
+.carouselSection .carousel-item .thumbs img {
+  border-radius: 50%;
+}
+.carouselSection .carousel-item h3 {
+  font-size: 6.5rem;
+  line-height: 65px;
+}
+.carouselSection .carousel-item p {
+  font-size: 2.4rem;
+}
+.carouselSection .carousel-item:nth-of-type(1) {
+  background-image: url("../img/finland.jpg");
+}
+.carouselSection .carousel-item:nth-of-type(2) {
+  background-image: url("../img/mountains.jpg");
+}
+.carouselSection .carousel-item:nth-of-type(3) {
+  background-image: url("../img/mountains-1.jpg");
+}
+
+.contentSection .titleContent {
+  text-align: center;
+}
+.contentSection .titleContent h3 {
+  font-size: 3.6rem;
+  color: #000;
+  line-height: 2;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+.contentSection .titleContent p {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #585858;
+}
+@media only screen and (min-width: 375px) and (max-width: 540px) {
+  .contentSection .detailContent .nav-item {
+    display: block;
+    min-width: 40%;
+    text-align: center;
+  }
+}
+.contentSection .detailContent .nav .nav-item {
+  margin: 0 0.5rem;
+}
+.contentSection .detailContent .nav .nav-item .nav-link.active {
+  color: #fff;
+  background-color: #35a22c;
+}
+.contentSection .detailContent .nav .nav-item .nav-link {
+  text-align: center;
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  background: #fff;
+  color: #585858;
+  border: 1px solid #000;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .rowhover {
+  cursor: pointer;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .rowhover:hover h3 {
+  color: #35a22c;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .card {
+  margin-top: 3rem;
+  overflow: hidden;
+  border-radius: 3rem;
+  border: none;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .card .card-body {
+  overflow: hidden;
+  border-radius: 0 0 3rem 3rem;
+  border: 1px solid transparent;
+  transition: all 0.5s ease;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .card .card-body h3 {
+  font-size: 2rem;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .card .card-body p {
+  font-size: 1.6rem;
+  color: #585858;
+}
+.contentSection .detailContent .tab-content .tab-pane .row .card:hover .card-body {
+  border-color: #35a22c;
+  border-top-color: transparent;
+}
+
+.footerSection .itemContainer {
+  position: relative;
+}
+.footerSection .itemContainer .footer__item {
+  padding: 5rem 0;
+}
+.footerSection .itemContainer .footer__item a {
+  margin: 0 0.5rem;
+}
+.footerSection .itemContainer .footer__item a i {
+  font-size: 2rem;
+  width: 4.2rem;
+  height: 4.2rem;
+  border: 1px solid #a09f9f;
+  border-radius: 50%;
+  line-height: 4.2rem;
+  color: #a09f9f;
+  transition: all 0.3s ease;
+}
+.footerSection .itemContainer .footer__item a i:hover {
+  border: 1px solid #35a22c;
+  color: #35a22c;
+}
+.footerSection .itemContainer::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #a09f9f;
+  bottom: 0;
+  left: 0;
+}
+.footerSection .contentContainer {
+  font-size: 1.5rem;
+  padding: 3rem 0 5rem 0;
+  color: #a09f9f;
+}
+
+.productSection {
+  background-image: url("../img/3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 10rem;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .productSection .productContainer {
+    max-width: 99.1rem;
+  }
+}
+.productSection .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.productSection .productContainer {
+  position: relative;
+}
+.productSection .productContainer .containerHeading {
+  text-align: center;
+  color: #fff;
+  padding-top: 10rem;
+}
+.productSection .productContainer .containerHeading h3 {
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  padding-bottom: 2.5rem;
+}
+.productSection .productContainer .containerHeading p {
+  font-size: 1.5rem;
+  width: 75%;
+  line-height: 2;
+  margin: auto;
+}
+.productSection .productContainer .containerContent {
+  padding: 5rem 0 10rem 0;
+  text-align: center;
+  color: #fff;
+}
+.productSection .productContainer .containerContent .Content__item {
+  margin-top: 5rem;
+  background-color: rgba(225, 225, 225, 0.2);
+  padding: 4rem;
+  border-radius: 1rem;
+  border: 2px solid rgba(225, 225, 225, 0.2);
+  backdrop-filter: blur(0.3rem);
+  transition: all 0.3s ease;
+}
+.productSection .productContainer .containerContent .Content__item:hover {
+  background: #000;
+  border: 1px solid #fff;
+}
+.productSection .productContainer .containerContent .Content__item i {
+  font-size: 4.5rem;
+  color: #35a22c;
+}
+.productSection .productContainer .containerContent .Content__item h4 {
+  margin: 2.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.productSection .productContainer .containerContent .Content__item p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.achievementSection {
+  position: relative;
+}
+.achievementSection .achievementBg {
+  background-image: url(./../../img/memphis_3.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.achievementSection .achievementContainer .achievementContent {
+  padding: 7rem 0;
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-left {
+  border-radius: 1rem;
+  background: rgba(225, 225, 225, 0.2);
+  padding: 5rem;
+  backdrop-filter: blur(0.3rem);
+  border: 1px solid rgba(225, 225, 225, 0.25);
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-left h2 {
+  font-size: 3.6rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #000;
+  line-height: 4.2rem;
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-left p {
+  padding-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #585858;
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-right {
+  border-radius: 1rem;
+  padding: 5rem 0;
+  backdrop-filter: blur(0.3rem);
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-right p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-right .item__banner {
+  margin-top: 5rem;
+}
+.achievementSection .achievementContainer .achievementContent .Content__item-right .item__banner img {
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  font-size: 10px;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=main.css.map */
